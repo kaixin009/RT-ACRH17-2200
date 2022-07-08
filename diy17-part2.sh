@@ -19,6 +19,7 @@ sed -i 's/model = "ASUS RT-ACRH17"/model = "ASUS RT-AC2200"/g' target/linux/ipq4
 # 删除原来的adbyby
 rm -rf  feeds/luci/applications/luci-app-adbyby-plus
 svn co https://github.com/NueXini/NueXini_Packages/trunk/luci-app-adbyby-plus package/lean/luci-app-adbyby-plus
+svn co https://github.com/281677160/openwrt-package/trunk/luci-app-smartdns package/lean/luci-app-smartdns
 
 # 删除原来的luci-app-eqos
 rm -rf  feeds/luci/applications/luci-app-eqos
@@ -44,3 +45,5 @@ sed -i '/set wireless.default_radio0.ssid=RT-ACRH17_5G/a\ set wireless.default_r
 #git clone https://github.com/small-5/luci-app-adblock-plus.git package/lean/luci-app-adblock-plus
 
 git clone https://github.com/wiwizcom/WiFiPortal.git package/wifidog-wiwiz
+
+git clone https://github.com/sirpdboy/netspeedtest.git package/netspeedtest
